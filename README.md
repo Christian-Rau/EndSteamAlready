@@ -10,8 +10,6 @@ EndSteamAlready provides a simple, intuitive graphical user interface (GUI) for 
 
 - **One-Click Solution**: Terminate all Steam processes with a single click.
 - **User-Friendly Interface**: Simple and easy-to-navigate GUI.
-- **Lightweight**: Minimalistic and efficient design.
-- **Customizable**: Modify the code to suit your specific needs.
 
 ## 📦 Installation Options
 
