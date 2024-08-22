@@ -30,7 +30,8 @@ If you'd like to build the executable yourself, follow these steps:
 
 ````bash
 git clone https://github.com/Christian-Rau/SteamBoot.git
-cd SteamBoot```
+cd SteamBoot
+````
 
 #### Step 2: Set Up a Virtual Environment
 
