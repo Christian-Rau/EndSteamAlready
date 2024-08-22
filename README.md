@@ -2,7 +2,7 @@
 
 > **Note:** This repository is a clone of the original project by [ToClickx](https://github.com/ToClickx/fully-close-steam). It has been modified to address issues encountered during execution.
 
-EndSteamAlready provides a simple, intuitive graphical user interface (GUI) for completely closing all Steam processes. It ensures no Steam-related processes remain running in the background after you close the main application, especially useful when Steam refuses to quit properly.
+EndSteamAlready provides a simple, intuitive graphical user interface (GUI) for completely closing all Steam processes. It ensures NO Steam-related processes remain running in the background after you close the main application, especially useful when Steam refuses to quit properly. Because steam snoops!
 
 ## 🚀 Features
 
