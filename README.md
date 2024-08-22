@@ -1,5 +1,9 @@
 # EndSteamAlready
 
+EndSteamAlready: Giving Steam the Boot, Literally!
+
+Sick of Steam staying in the background when you think you've closed it? With EndSteamAlready, one click is all it takes—puff—and Steam is really gone from your system, freeing up resources instantly. It's a completely safe Steam process-killer, perfect for when you're ready to shut down or just need to declutter.
+
 > **Note:** This repository is a clone of the original project by [ToClickx](https://github.com/ToClickx/fully-close-steam). It has been modified to address issues encountered during execution.
 
 EndSteamAlready provides a simple, intuitive graphical user interface (GUI) for completely closing all Steam processes. It ensures **NO** Steam-related processes remain running in the background after you close the main application, especially useful when Steam refuses to quit properly. **Because steam snoops!**
