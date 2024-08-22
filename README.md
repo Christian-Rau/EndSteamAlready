@@ -1,10 +1,10 @@
-# EndSteamAlready: Giving Steam the Boot, Literally!
+# SteamBoot: Giving Steam the Boot, Literally!
 
 > **Note:** This repository is a clone of the original project by [ToClickx](https://github.com/ToClickx/fully-close-steam). It has been modified to address issues encountered during execution.
 
-Sick of Steam staying in the background when you think you've closed it? With EndSteamAlready, one click is all it takes—puff—and Steam is really gone from your system, freeing up resources instantly. It's a completely safe Steam process-killer, perfect for when you're ready to shut down or just need to declutter.
+Sick of Steam staying in the background when you think you've closed it? With SteamBoot, one click is all it takes—puff—and Steam is really gone from your system, freeing up resources instantly. It's a completely safe Steam process-killer, perfect for when you're ready to shut down or just need to declutter.
 
-EndSteamAlready provides a simple, intuitive graphical user interface (GUI) for completely closing all Steam processes.
+SteamBoot provides a simple, intuitive graphical user interface (GUI) for completely closing all Steam processes.
 
 ## 🚀 Features
 
@@ -29,7 +29,7 @@ If you'd like to build the executable yourself, follow these steps:
 #### Step 1: Clone the Repository
 
 ````bash
-git clone https://github.com/Christian-Rau/EndSteamAlready.git
+git clone https://github.com/Christian-Rau/SteamBoot.git
 cd SteamBoot```
 
 #### Step 2: Set Up a Virtual Environment
@@ -103,7 +103,7 @@ After building the executable, the project structure looks like this:
 
 ```bash
 SteamBoot├── dist
-│   └── EndSteamAlready.exe # executable
+│   └── SteamBoot.exe # executable
 ├── gui.py
 ├── icon.ico
 ├── main.py

@@ -26,7 +26,7 @@ jobs:
       - name: Upload EXE as artifact
         uses: actions/upload-artifact@v3
         with:
-          name: EndSteamAlready          path: dist/SteamBoot.exe
+          name: SteamBoot          path: dist/SteamBoot.exe
 
   release:
     needs: build
