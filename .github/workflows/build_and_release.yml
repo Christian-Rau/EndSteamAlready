@@ -21,13 +21,13 @@ jobs:
         run: pip install pyinstaller
 
       - name: Build EXE with PyInstaller
-        run: pyinstaller --onefile --windowed --icon=icon.ico --name=EndSteamAlready main.py
+        run: pyinstaller --onefile --windowed --icon=icon.ico --name=SteamBoot main.py
 
       - name: Upload EXE as artifact
         uses: actions/upload-artifact@v3
         with:
-          name: EndSteamAlready
-          path: dist/EndSteamAlready.exe
+          name: SteamBoot
+          path: dist/SteamBoot.exe
 
   release:
     needs: build
@@ -38,11 +38,11 @@ jobs:
       - name: Download EXE artifact
         uses: actions/download-artifact@v3
         with:
-          name: EndSteamAlready
+          name: SteamBoot
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: EndSteamAlready.exe
+          files: SteamBoot.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -17,7 +17,7 @@ def create_gui():
     """
     # Create the main window
     root = tk.Tk()
-    root.title("EndSteamAlready")
+    root.title("SteamBoot")
     root.geometry("300x140")  # Set the window size
 
     # Optional: Set window icon if the file exists

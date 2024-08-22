@@ -1,8 +1,8 @@
-# EndSteamAlready
+# SteamBoot
 
 > **Note:** This repository is a clone of the original project by [ToClickx](https://github.com/ToClickx/fully-close-steam). It has been modified to address issues encountered during execution.
 
-EndSteamAlready provides a simple, intuitive graphical user interface (GUI) for completely closing all Steam processes. It ensures no Steam-related processes remain running in the background after you close the main application, especially useful when Steam refuses to quit properly.
+SteamBoot provides a simple, intuitive graphical user interface (GUI) for completely closing all Steam processes. It ensures no Steam-related processes remain running in the background after you close the main application, especially useful when Steam refuses to quit properly.
 
 ## 🚀 Features
 
@@ -15,10 +15,10 @@ EndSteamAlready provides a simple, intuitive graphical user interface (GUI) for 
 
 ### 1. **Best Option**: Download the Latest Release
 
-To save time and avoid the need for installation, you can simply download the latest pre-built executable from the [Releases](https://github.com/Christian-Rau/EndSteamAlready/releases) page:
+To save time and avoid the need for installation, you can simply download the latest pre-built executable from the [Releases](https://github.com/Christian-Rau/SteamBoot/releases) page:
 
-1. Go to the [Releases](https://github.com/Christian-Rau/EndSteamAlready/releases) page.
-2. Download the latest release (`EndSteamAlready.exe`).
+1. Go to the [Releases](https://github.com/Christian-Rau/SteamBoot/releases) page.
+2. Download the latest release (`SteamBoot.exe`).
 3. Run the executable directly—no installation needed.
 4. Lock it to taskbar (Optional)
 
@@ -29,8 +29,8 @@ If you'd like to build the executable yourself, follow these steps:
 #### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/Christian-Rau/EndSteamAlready.git
-cd EndSteamAlready
+git clone https://github.com/Christian-Rau/SteamBoot.git
+cd SteamBoot
 ```
 
 #### Step 2: Set Up a Virtual Environment
@@ -68,10 +68,10 @@ pip install -r requirements.txt
 To package the application into a standalone executable, use `pyinstaller`:
 
 ```bash
-pyinstaller --onefile --windowed --icon=icon.ico --name=EndSteamAlready main.py
+pyinstaller --onefile --windowed --icon=icon.ico --name=SteamBoot main.py
 ```
 
-This will generate an executable file named `EndSteamAlready.exe` in the `dist` directory.
+This will generate an executable file named `SteamBoot.exe` in the `dist` directory.
 
 ### 3. Clone or Download and Run the Script Directly
 
@@ -90,7 +90,7 @@ If you prefer to run the script directly, you can do so without building an exec
 The project structure before building the executable is as follows:
 
 ```bash
-EndSteamAlready
+SteamBoot
 ├── gui.py
 ├── icon.ico
 ├── main.py
@@ -104,9 +104,9 @@ EndSteamAlready
 After building the executable, the project structure looks like this:
 
 ```bash
-EndSteamAlready
+SteamBoot
 ├── dist
-│   └── EndSteamAlready.exe # executable
+│   └── SteamBoot.exe # executable
 ├── gui.py
 ├── icon.ico
 ├── main.py
