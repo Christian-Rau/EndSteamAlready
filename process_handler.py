@@ -1,13 +1,11 @@
-# This is the version without a gui
-# Make sure to run `pip install psutil`
+import psutil
+from tkinter import messagebox
 
-import psutil  # Import the psutil module for process management
-
-print("Steam Killer: Made by toclick on discord or ToClickx on GitHub")
 def kill_steam_processes():
     """
     Terminates all processes with 'steam' in their name.
     """
+    terminated = False
     # Iterate over all running processes
     for process in psutil.process_iter(['pid', 'name']):
         try:
@@ -15,12 +13,14 @@ def kill_steam_processes():
             if 'steam' in process.info['name'].lower():
                 # Print information about the process being terminated
                 print(f"Terminating process: {process.info['name']} (PID: {process.info['pid']})")
-                # Terminate the process using psutil's terminate method
+                # Terminate the process
                 process.terminate()
+                terminated = True
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
-            # Handle exceptions if the process is no longer available, access is denied, or the process is a zombie
             continue
-
-if __name__ == "__main__":
-    # Execute the function to kill all processes with 'steam' in their name
-    kill_steam_processes()
+    
+    # Show a message box with the result
+    if terminated:
+        messagebox.showinfo("Success", "All 'steam' processes have been terminated.")
+    else:
+        messagebox.showinfo("No Processes Found", "No processes with 'steam' in their name were found.")

@@ -1,14 +1,161 @@
-# fully-close-steam
-Finally be able to fully close steam without anything running in the background
-If you are not a python coder:
-1. Go to the releases
-2. Install steamcloser.zip
-3. Right click on the file and press "Extract All" (it should be somewhere towards the top)
-4. Press enter
-5. Wait a second
-6. Double click steamcloser then double click steam killer again and you should be able to run the file
-7. If you get a weird menu popup saying windows protected your pc press more info then run anyway.
-I'd guess it's because the program closes things.
+# EndSteamAlready
 
-if you are a python coder you can just copy the code from either steamclosergui.py or steamclosernogui.py
-They are the exact same but one is started by pressing a button, the other is started by running the script.
+> **Note:** This repository is a clone of the original project by [ToClickx](https://github.com/ToClickx/fully-close-steam). It has been modified to address issues encountered during execution.
+
+EndSteamAlready provides a simple, intuitive graphical user interface (GUI) for completely closing all Steam processes. It ensures no Steam-related processes remain running in the background after you close the main application, especially useful when Steam refuses to quit properly.
+
+## 🚀 Features
+
+- **One-Click Solution**: Terminate all Steam processes with a single click.
+- **User-Friendly Interface**: Simple and easy-to-navigate GUI.
+- **Lightweight**: Minimalistic and efficient design.
+- **Customizable**: Modify the code to suit your specific needs.
+
+## 📦 Installation Options
+
+### 1. **Best Option**: Download the Latest Release
+
+To save time and avoid the need for installation, you can simply download the latest pre-built executable from the [Releases](https://github.com/Christian-Rau/EndSteamAlready/releases) page:
+
+1. Go to the [Releases](https://github.com/Christian-Rau/EndSteamAlready/releases) page.
+2. Download the latest release (`EndSteamAlready.exe`).
+3. Run the executable directly—no installation needed.
+4. Lock it to taskbar (Optional)
+
+### 2. Clone or Download the Repository and Build the Executable
+
+If you'd like to build the executable yourself, follow these steps:
+
+#### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/Christian-Rau/EndSteamAlready.git
+cd EndSteamAlready
+```
+
+#### Step 2: Set Up a Virtual Environment
+
+Create a virtual environment in your terminal:
+
+```bash
+python -m venv venv
+```
+
+#### Step 3: Activate the Virtual Environment
+
+- For Windows (PowerShell):
+
+  ```bash
+  venv\Scripts\Activate.ps1
+  ```
+
+- For macOS/Linux:
+
+  ```bash
+  source venv/bin/activate
+  ```
+
+#### Step 4: Install Dependencies
+
+Inside the virtual environment, install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+#### Step 5: Build the Executable
+
+To package the application into a standalone executable, use `pyinstaller`:
+
+```bash
+pyinstaller --onefile --windowed --icon=icon.ico --name=EndSteamAlready main.py
+```
+
+This will generate an executable file named `EndSteamAlready.exe` in the `dist` directory.
+
+### 3. Clone or Download and Run the Script Directly
+
+If you prefer to run the script directly, you can do so without building an executable:
+
+1. Clone the repository as described above.
+2. Install the dependencies inside a virtual environment.
+3. Run the script directly:
+
+   ```bash
+   python main.py
+   ```
+
+## 📁 Project Structure
+
+The project structure before building the executable is as follows:
+
+```bash
+EndSteamAlready
+├── gui.py
+├── icon.ico
+├── main.py
+├── process_handler.py
+├── README.md
+└── requirements.txt
+```
+
+### When manually creating the executeable
+
+After building the executable, the project structure looks like this:
+
+```bash
+EndSteamAlready
+├── dist
+│   └── EndSteamAlready.exe # executable
+├── gui.py
+├── icon.ico
+├── main.py
+├── process_handler.py
+├── README.md
+└── requirements.txt
+```
+
+## Set PowerShell Execution Policy
+
+The most common reason for this error is that PowerShell's execution policy is set to Restricted or AllSigned, which prevents scripts from being executed.
+
+Open PowerShell as Administrator:
+
+Right-click the Start menu and select _Windows PowerShell (Admin)_.
+Set the execution policy to RemoteSigned:
+Run the following command to allow PowerShell to execute local scripts that are not digitally signed:
+
+powershell
+
+```bash
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+You may be prompted with a warning message. Type Y and press Enter to confirm.
+
+## 🛠️ Customization
+
+The code is modular and easily customizable. You can modify it to suit your specific needs. For example, you can add additional processes to terminate or change the design of the GUI by tweaking `gui.py`.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you encounter bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+- Original project by [ToClickx](https://github.com/ToClickx/fully-close-steam)
+- [PyInstaller](https://www.pyinstaller.org/) for packaging Python applications
+
+---
+
+Happy coding! If you find this project helpful, please consider giving it a ⭐️ on GitHub.
