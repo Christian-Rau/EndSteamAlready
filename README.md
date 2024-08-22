@@ -30,10 +30,9 @@ If you'd like to build the executable yourself, follow these steps:
 
 #### Step 1: Clone the Repository
 
-```bash
+````bash
 git clone https://github.com/Christian-Rau/EndSteamAlready.git
-cd EndSteamAlready
-```
+cd SteamBoot```
 
 #### Step 2: Set Up a Virtual Environment
 
@@ -41,7 +40,7 @@ Create a virtual environment in your terminal:
 
 ```bash
 python -m venv venv
-```
+````
 
 #### Step 3: Activate the Virtual Environment
 
@@ -92,8 +91,7 @@ If you prefer to run the script directly, you can do so without building an exec
 The project structure before building the executable is as follows:
 
 ```bash
-EndSteamAlready
-├── gui.py
+SteamBoot├── gui.py
 ├── icon.ico
 ├── main.py
 ├── process_handler.py
@@ -106,8 +104,7 @@ EndSteamAlready
 After building the executable, the project structure looks like this:
 
 ```bash
-EndSteamAlready
-├── dist
+SteamBoot├── dist
 │   └── EndSteamAlready.exe # executable
 ├── gui.py
 ├── icon.ico

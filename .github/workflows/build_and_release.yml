@@ -26,8 +26,7 @@ jobs:
       - name: Upload EXE as artifact
         uses: actions/upload-artifact@v3
         with:
-          name: SteamBoot
-          path: dist/SteamBoot.exe
+          name: EndSteamAlready          path: dist/SteamBoot.exe
 
   release:
     needs: build
@@ -38,9 +37,7 @@ jobs:
       - name: Download EXE artifact
         uses: actions/download-artifact@v3
         with:
-          name: SteamBoot
-
-      - name: Create GitHub Release
+          name: SteamBoot      - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           files: SteamBoot.exe
