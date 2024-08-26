@@ -1,6 +1,6 @@
 # SteamBoot: Giving Steam the Boot, Literally!
 
-> **Note:** This repository is a clone of the original project by [ToClickx](https://github.com/ToClickx/fully-close-steam). It has been modified to address issues encountered during execution.
+> **Note:** This repository is a fork of the original project by [ToClickx](https://github.com/ToClickx/fully-close-steam). It has been modified to address issues encountered during execution.
 
 Sick of Steam staying in the background when you think you've closed it? With SteamBoot, one click is all it takes—puff—and Steam is really gone from your system, freeing up resources instantly. It's a completely safe Steam process-killer, perfect for when you're ready to shut down or just need to declutter.
 
